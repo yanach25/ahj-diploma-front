@@ -1,0 +1,23 @@
+{
+    "parser": "@babel/eslint-parser",
+    "extends": "airbnb-base",
+    "env": {
+       "es6": true,
+       "browser": true,
+       "jest": true
+    },
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+      "prefer-const": "off",
+      "class-methods-use-this": "off",
+      "no-param-reassign": "off",
+      "no-case-declarations": "off",
+      "no-restricted-syntax": [
+        "error",
+        "LabeledStatement",
+        "WithStatement"
+      ]
+    }
+  }

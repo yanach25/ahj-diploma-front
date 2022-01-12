@@ -1,0 +1,116 @@
+body {
+  background: lightgray!important;
+}
+
+#app {
+  position: relative;
+}
+
+.card {
+  height: calc(100vh - 40px);
+  margin: 20px auto;
+  width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex-grow: 1;
+  flex-basis:0;
+  justify-items: flex-end;
+  flex-flow: column-reverse;
+}
+
+.message-wrapper {
+  background: #effdde;
+  padding: 10px;
+  border-radius: 3px;
+  padding-left: 22px!important;
+}
+
+.content {
+  scrollbar-width: thin;
+}
+.content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#fileInput {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.message-item {
+  font-size: 14px;
+  margin-bottom: 16px;
+  margin-right: 10px !important;
+}
+
+.timestamp {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.row.message > .col-9 {
+  word-break: break-word;
+}
+
+.empty-anchor {
+  width: 0;
+  height: 0;
+  margin: 1px;
+}
+
+span#upload:hover, span#upload:active, span#geo:active, span#geo:hover {
+  cursor: pointer;
+}
+
+a > img {
+  width: 200px;
+}
+
+div#file-info {
+  font-size: 12px;
+  color: blue;
+  cursor: pointer;
+}
+
+span#geo {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 16px;
+  background: lightblue;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.header button {
+  margin-right: 10px;
+}
+
+.input-block {
+  margin-top: 10px;
+}
